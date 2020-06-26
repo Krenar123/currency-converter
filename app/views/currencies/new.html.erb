@@ -1,2 +1,56 @@
-<h1>Currencies#new</h1>
-<p>Find me in app/views/currencies/new.html.erb</p>
+<div class="section">
+    <div class="section__header">
+        <div class="section__header__main">
+            <%= image_tag("pickar_logo_white.png", :alt => "logo", :class => "pickar_logo") %>
+        </div>
+        <div class="section__header__content">
+            <h1>Convert currencies in real-time</h1>
+        </div>
+        <div class="section__header__footer">
+            <div class="section__header__form">
+                <form>
+                    <div class="section__header__form__items">
+                        <div class="form__item">
+                            <p>Amount</p>
+                            <input type="text" id="selectionone" placeholder="1.00">
+                        </div>
+                        <div class="form__item">
+                            <p>From</p>
+                            <select id="selection">
+                                <option id="selection" value="USD" selected>USD</option>
+                                <option id="selection" value="EUR">EUR</option>
+                                <option id="selection" value="CH">CH</option>
+                            </select>
+                        </div>
+                        <div class="switcher">
+                            <%= image_tag("left.png", :alt => "logo", :class => "arrow-left") %>
+                            <%= image_tag("right.png", :alt => "logo", :class => "arrow-right") %>
+                        </div>
+                        <div class="form__item">
+                            <p>To</p>
+                            <select id="selection">
+                                <option value="USD" selected>USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="CH">CH</option>
+                            </select>
+                        </div>
+                        <div class="form__item last">
+                            <p style="opacity:0">Submit</p>
+                            <input type="submit" id="selectionsubmit" value="Convert">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="section__header__table">
+                <p>View conversation history ></p>
+            </div>
+        </div>
+    </div>
+    <div class="section__main">
+        <div class="section__main__result">
+            <p id="main__result__amount">Krenar = </p>
+            <p id="main__result__res">Nali ma i forti USD</p>
+        </div>
+    </div>
+
+</div>
