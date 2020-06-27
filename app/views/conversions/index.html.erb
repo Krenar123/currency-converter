@@ -1,2 +1,32 @@
-<h1>Currencies#index</h1>
-<p>Find me in app/views/currencies/index.html.erb</p>
+<div class="section__full__table">
+    <div class="section__header__main">
+        <%= image_tag("pickar_logo_white.png", :alt => "logo", :class => "pickar_logo") %>
+        <p id="table_paragraph"> <%= link_to "< Go back",  new_conversion_path %>  </p>
+    </div>
+    <div class="section__table__list">
+        <div class="section__table__list__item_first">
+            <div class="item">
+                <p>Date</p>
+            </div>
+            <div class="item">
+                <p>From</p>
+            </div>
+            <div class="item">
+                <p>To </p>
+            </div>
+        </div>
+        <% @conversions.each do |conv| %>
+            <div class="section__table__list__item">
+                <div class="item">
+                    <p><%= conv.created_at.strftime("%B %d, %Y") %></p>
+                </div>
+                <div class="item">
+                    <p id="right"><%= number_with_precision(conv.amount,:precision => 2) %> </p><p id="left"><%= conv.from %></p>
+                </div>
+                <div class="item">
+                    <p id="right__result"><%= number_with_precision(conv.result,:precision => 6) %></p> <p id="left"><%= conv.to %></p>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

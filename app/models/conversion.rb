@@ -2,6 +2,9 @@ class Conversion < ApplicationRecord
     include HTTParty
     before_create :fill_result
 
+    validates :amount, 
+        numericality: {only_float:true , message: 'must be float'},
+        presence: {message: 'must be given'}
 
     private 
 

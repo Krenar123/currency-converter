@@ -1,0 +1,24 @@
+<%= form_with model: conversion, local: true do |form| %>
+    <div class="section__header__form__items">
+        <div class="form__item">
+            <p>Amount</p>
+            <%= form.number_field :amount, id: "selectionone",step: "0.01",placeholder: "0.01"  %>
+        </div>
+        <div class="form__item">
+            <p>From</p>
+            <%= form.select(:from, raw('<option value="EUR">EUR</option><option value="USD">USD</option><option value="CHF">CHF</option>')) %>
+        </div>
+        <div class="switcher">
+            <%= image_tag("left.png", :alt => "logo", :class => "arrow-left") %>
+            <%= image_tag("right.png", :alt => "logo", :class => "arrow-right") %>
+        </div>
+        <div class="form__item">
+            <p>To</p>
+            <%= form.select(:to,raw('<option value="EUR">EUR</option><option value="USD">USD</option><option value="CHF">CHF</option>')) %>
+        </div>
+        <div class="form__item last">
+            <p style="opacity:0">Submit</p>
+            <%= form.submit "Convert", id: 'selectionsubmit' %>
+        </div>
+    </div>
+<% end %>

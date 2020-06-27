@@ -150,3 +150,73 @@ select{
         }
     }
 }
+.section__full__table{
+    background-color: #363A3E;
+    height: 100%;
+}
+#table_paragraph{
+    margin-left: 5%;
+    margin-top: 7%;
+    a{
+        color: #fff;
+    }
+}
+.section__table__list{
+    margin-left: 5%;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    .section__table__list__item{
+        margin-top:10px;
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows:  100%;
+        grid-template-areas: 
+            "first second third";
+        .item{
+            margin-left: 40%;
+            display: flex;
+            flex-direction: row;
+            p{ 
+                font-size:16px;
+                line-height: 19px;
+            }
+            #left{
+                width: 40%;
+            }
+            #right{
+                width:30%
+            }
+            #right__result{
+                width:60%;
+            }
+        }
+    }
+    .section__table__list__item_first{
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #363A3E;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows:  100%;
+        grid-template-areas: 
+            "first second third";
+        .item{
+            margin-left: 40%;
+            p{
+                color: #fff;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+  }
