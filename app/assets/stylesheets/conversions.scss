@@ -5,10 +5,14 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+a{
+    color: #363A3E;
+    text-decoration: none;
+}
 h1{
     font-family: 'Roboto', sans-serif;
     color: #FFF;
-    font-size: 40px;;
+    font-size: 40px;
 }
 p{
     font-size: 12px;
@@ -76,7 +80,7 @@ select{
         margin-left:25px;
         width: calc(100% / 4);
         height: 100%;
-        #selection{
+        #conversion_from, #conversion_to{
             border: none;
             border-radius: 5px;
             padding-left: 5%;
@@ -140,6 +144,7 @@ select{
             line-height: 23px;
         }
         #main__result__res{
+            margin: 0;
             font-size: 40px;
             font-weight: 700;
         }

@@ -8,19 +8,15 @@
         </div>
         <div class="section__header__footer">
             <div class="section__header__form">
-                <form>
+                <%= form_with model: @conversion, local: true do |form| %>
                     <div class="section__header__form__items">
                         <div class="form__item">
                             <p>Amount</p>
-                            <input type="text" id="selectionone" placeholder="1.00">
+                            <%= form.number_field :amount, id: "selectionone",step: "0.01",placeholder: "0.01"  %>
                         </div>
                         <div class="form__item">
                             <p>From</p>
-                            <select id="selection">
-                                <option id="selection" value="USD" selected>USD</option>
-                                <option id="selection" value="EUR">EUR</option>
-                                <option id="selection" value="CH">CH</option>
-                            </select>
+                            <%= form.select(:from, raw('<option value="EUR">EUR</option><option value="USD">USD</option><option value="CHF">CHF</option>')) %>
                         </div>
                         <div class="switcher">
                             <%= image_tag("left.png", :alt => "logo", :class => "arrow-left") %>
@@ -28,21 +24,17 @@
                         </div>
                         <div class="form__item">
                             <p>To</p>
-                            <select id="selection">
-                                <option value="USD" selected>USD</option>
-                                <option value="EUR">EUR</option>
-                                <option value="CH">CH</option>
-                            </select>
+                            <%= form.select(:to,raw('<option value="EUR">EUR</option><option value="USD">USD</option><option value="CHF">CHF</option>')) %>
                         </div>
                         <div class="form__item last">
                             <p style="opacity:0">Submit</p>
-                            <input type="submit" id="selectionsubmit" value="Convert">
+                            <%= form.submit "Convert", id: 'selectionsubmit' %>
                         </div>
                     </div>
-                </form>
+                <% end %>
             </div>
             <div class="section__header__table">
-                <p>View conversation history ></p>
+                <p> <%= link_to "View conversation history >",conversions_path %>  </p>
             </div>
         </div>
     </div>
