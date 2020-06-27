@@ -1,24 +1,18 @@
-# README
+# Currency converter app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### For this app we used Ruby on Rails framework, front end is pure css and scss and we use default database which is SQLite
 
-Things you may want to cover:
+#### We used REST actions to communicate beetween frontend and backend  ( MVC architecture).
 
-* Ruby version
+### This web app it has responsive components but the height its not responsive, i actually use bulma or bootstrap always but i wanted to do it with pure css  and scss
 
-* System dependencies
+### Version of ruby 
 
-* Configuration
+`ruby '2.6.6'`
+### Version of rails
 
-* Database creation
+`gem 'rails', '~> 6.0.3', '>= 6.0.3.2'`
 
-* Database initialization
+### Version of webpacker
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`gem 'webpacker', '~> 4.0'`
