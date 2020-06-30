@@ -17,7 +17,7 @@ class ConversionsController < ApplicationController
   end
 
   def index
-    @conversions = Conversion.all 
+    @conversions = Conversion.all.order("created_at DESC") 
   end
 
   private
