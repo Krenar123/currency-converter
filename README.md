@@ -46,4 +46,4 @@ After using `rails s` go to browser and run it locally (default port is :3000)
 
 # Describing the process 
 
-![Root path](https://github.com/Krenar123/currency-converter/master/images/first_time.png)
+![Root path](https://github.com/Krenar123/currency-converter/images/first_time.png)
