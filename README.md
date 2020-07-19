@@ -24,14 +24,16 @@
 
 
 # Installation
-### Add these gems and run this command
-`bundle install`
 
 You can clone this project and download the neccessary version of ruby (using rbenv), rails and bundle. For more information check this link:
 
 For windows environment ( using WSL ) - https://gorails.com/setup/windows/10
 
 For Linux environment ( I am using Ubuntu 18.04 ) - https://gorails.com/setup/ubuntu/20.04 
+
+Open Text editor in terminal run this command below: 
+### Add these gems and run this command
+`bundle install`
 
 # Usage
 After installing all softwares and tools download or clone this project locally  and then you can open the project with any text editor( I am using Visual Studio Code ) and run it.
@@ -41,3 +43,7 @@ After installing all softwares and tools download or clone this project locally 
 `rails server` - to run this app locally 
 
 After using `rails s` go to browser and run it locally (default port is :3000)
+
+# Describing the process 
+
+![Root path](https://github.com/Krenar123/currency-converter/master/images/first_time.png)
