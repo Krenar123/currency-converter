@@ -47,13 +47,13 @@ After using `rails s` go to browser and run it locally (default port is :3000)
 # Describing the process 
 
 ### First thing u see when u run server
-![Root route displayed](https://github.com/Krenar123/currency-converter/tree/master/app/assets/images/images_desc/first_time.png)
+![first_page](https://user-images.githubusercontent.com/48763668/87883442-afb9e980-ca07-11ea-8f8c-9eebb4d1e4b9.png)
 
 ### Submiting form without given params
-![Invalid submit](https://github.com/Krenar123/currency-converter/tree/master/app/assets/images/images_desc/history_table.png)
+![invalid_submit](https://user-images.githubusercontent.com/48763668/87883492-058e9180-ca08-11ea-822d-23b7b3f0d779.png)
 
 ### Submiting form with params
-![Valid submit](https://github.com/Krenar123/currency-converter/tree/master/app/assets/images/images_desc/submiting_form.png)
+![valid_submit](https://user-images.githubusercontent.com/48763668/87883494-09221880-ca08-11ea-8535-c4e7f6a0620b.png)
 
 ### Visiting table history of all conversions
-![Table history](https://github.com/Krenar123/currency-converter/tree/master/app/assets/images/images_desc/submiting_validate.png)
+![table_history](https://user-images.githubusercontent.com/48763668/87883495-0b847280-ca08-11ea-8dfe-db08165d2bf4.png)
